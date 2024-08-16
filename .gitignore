@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 
-/postgres
+./postgres
 
 # testing
 /coverage
