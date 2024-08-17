@@ -10,17 +10,21 @@ docker compose up -d
 
 2. Renombrar el .env.template a .env
 3. Remplazar variables de entorno
-4. Ejecutar el SEED para [crear la bd local](localhost:3000/api/seed)
-
-# Prisma comands
+4. Ejecutar
 
 ```bash
-npx prisma init
-
-npx prisma migrate dev
-
-npx prisma generate
+ npm run i
+ npm run dev
 ```
+
+5. Ejecutar comandos de prisma
+
+```bash
+    npx prisma migrate dev
+    npx prisma generate
+```
+
+6. Ejecutar el SEED para [crear la bd local](localhost:3000/api/seed)
 
 # Prod
 
