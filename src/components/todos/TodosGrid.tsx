@@ -3,6 +3,7 @@ import { Todo } from "@prisma/client"
 import { TodoItem } from "./TodoItem"
 import * as todosApi from "@/helpers/index"
 import { useRouter } from "next/navigation"
+import { toggleTodo } from "@/actions/todo-action"
 
 interface Props {
   todos?: Todo[]
@@ -11,11 +12,12 @@ interface Props {
 export const TodosGrid = ({ todos = [] }: Props) => {
   const router = useRouter()
 
-  const toggleTodo = async (id: string, complete: boolean) => {
-    const updatedTodo = await todosApi.updateTodo(id, complete)
+  // With API
+  // const toggleTodo = async (id: string, complete: boolean) => {
+  //   const updatedTodo = await todosApi.updateTodo(id, complete)
 
-    router.refresh() //actualiza la pagina, pero solo reconstruye el componente afectado
-  }
+  //   router.refresh() //actualiza la pagina, pero solo reconstruye el componente afectado
+  // }
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
