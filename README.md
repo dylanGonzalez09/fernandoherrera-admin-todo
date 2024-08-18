@@ -26,6 +26,11 @@ docker compose up -d
 
 6. Ejecutar el SEED para [crear la bd local](localhost:3000/api/seed)
 
+# Nota usuario por defecto
+
+**user**: test1@gmail.com
+**password**: 12345
+
 # Prod
 
 # Stage

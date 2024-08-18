@@ -7,3 +7,5 @@ export { TabBar } from "./tabBar/TabBar";
 export { ProductCard } from "./products/ProductCard";
 export { Star } from "./products/Star";
 export { ItemCard } from "./products/ItemCard";
+export { AuthProvider } from "./auth/AuthProvider";
+export { LogOutButton } from "./sidebar/LogOutButton";
