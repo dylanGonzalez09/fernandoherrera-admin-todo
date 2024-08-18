@@ -1,12 +1,13 @@
-import Image from "next/image"
-import Link from "next/link"
-import { SidebarItem } from "./SidebarItem"
-import { CiLogout } from "react-icons/ci"
+import Image from "next/image";
+import Link from "next/link";
+import { SidebarItem } from "./SidebarItem";
+import { CiLogout } from "react-icons/ci";
 import {
   IoCalendarOutline,
   IoCheckboxOutline,
+  IoCodeWorking,
   IoListOutline,
-} from "react-icons/io5"
+} from "react-icons/io5";
 
 const menuItem = [
   {
@@ -24,7 +25,12 @@ const menuItem = [
     path: "/dashboard/server-todos",
     icon: <IoListOutline />,
   },
-]
+  {
+    title: "Cookies",
+    path: "/dashboard/cookies",
+    icon: <IoCodeWorking />,
+  },
+];
 
 export const Sidebar = () => {
   return (
@@ -69,5 +75,5 @@ export const Sidebar = () => {
         </button>
       </div>
     </aside>
-  )
-}
+  );
+};
