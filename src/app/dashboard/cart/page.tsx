@@ -48,15 +48,11 @@ const page = () => {
       <div className="flex flex-col sm:flex-row gap-2 w-full">
         <div className="flex flex-col gap-2 w-full sm:w-8/12">
           {productsInCart.map(({ product, quantity }) => (
-            <>
+            <div key={product.id}>
               {quantity > 0 && (
-                <ItemCard
-                  key={product.id}
-                  product={product}
-                  quantity={quantity}
-                />
+                <ItemCard product={product} quantity={quantity} />
               )}
-            </>
+            </div>
           ))}
         </div>
         <div className="flex flex-col sm:w-4/12 w-full">
