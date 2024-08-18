@@ -4,3 +4,6 @@ export { TopMenu } from "./topMenu/TopMenu";
 export { WidgetItem } from "./widgetItem/WidgetItem";
 export { TodosGrid } from "./todos/TodosGrid";
 export { TabBar } from "./tabBar/TabBar";
+export { ProductCard } from "./products/ProductCard";
+export { Star } from "./products/Star";
+export { ItemCard } from "./products/ItemCard";
